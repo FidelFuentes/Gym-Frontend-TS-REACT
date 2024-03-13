@@ -5,6 +5,7 @@ import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
+import FlagOfArgentina from '@/assets/Flag_of_Argentina.png';
 
 type Props = {
   isTopOfPage: boolean;
@@ -27,9 +28,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
             <img alt="logo" src={Logo} />
-            <img alt="flag" src="/dist/assets/Flag_of_Argentina.svg.png"
-            width="50" height="30"
-            />
+            <img alt="flag" src={FlagOfArgentina} width="50" height="30" />
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
