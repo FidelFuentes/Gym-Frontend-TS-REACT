@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
 function App() {
+  //arreglando problema 2.1
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
